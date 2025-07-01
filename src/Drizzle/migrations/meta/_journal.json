@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1748259525179,
+      "tag": "0000_new_sabra",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1749035677480,
+      "tag": "0001_melodic_ender_wiggin",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1749037151303,
+      "tag": "0002_illegal_wolf_cub",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1749039486950,
+      "tag": "0003_amusing_kree",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1749118663788,
+      "tag": "0004_worthless_baron_zemo",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1749416724463,
+      "tag": "0005_fine_tusk",
+      "breakpoints": true
+    }
+  ]
+}
