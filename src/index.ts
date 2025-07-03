@@ -1,14 +1,14 @@
-import express from 'express';
-import cors from 'cors'; // ✅ Import CORS
+import express from "express";
+import cors from "cors";
 
-import customer from './auth/auth.routers';
-import location from './location/location.routers';
-import car from './car/car.routers';
-import booking from './booking/booking.routers';
-import reservation from './reservation/reservation.routers';
-import payment from './payment/payment.routers';
-import insurance from './insurance/insurance.routers';
-import maintenance from './maintainance/maintainance.routers';
+import customer from "./auth/auth.routers";
+import location from "./location/location.routers";
+import car from "./car/car.routers";
+import booking from "./booking/booking.routers";
+import reservation from "./reservation/reservation.routers";
+import payment from "./payment/payment.routers";
+import insurance from "./insurance/insurance.routers";
+import maintenance from "./maintainance/maintainance.routers";
 
 const initilizeApp = () => {
   const app = express();
@@ -26,8 +26,8 @@ const initilizeApp = () => {
   insurance(app);
   maintenance(app);
 
-  app.get('/', (req, res) => {
-    res.send('Hello, World!');
+  app.get("/", (req, res) => {
+    res.send("Hello, World!");
   });
 
   return app;

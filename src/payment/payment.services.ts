@@ -27,11 +27,18 @@ export const getPaymentsByBookingIdService = async (bookingId: number) => {
 };
 
 export const updatePaymentService = async (id: number, payment: TIPayment) => {
-  await db.update(PaymentTable).set(payment).where(eq(PaymentTable.paymentID, id)).returning();
+  await db
+    .update(PaymentTable)
+    .set(payment)
+    .where(eq(PaymentTable.paymentID, id))
+    .returning();
   return "Payment updated successfully";
 };
 
 export const deletePaymentService = async (id: number) => {
-  const deleted = await db.delete(PaymentTable).where(eq(PaymentTable.paymentID, id)).returning();
+  const deleted = await db
+    .delete(PaymentTable)
+    .where(eq(PaymentTable.paymentID, id))
+    .returning();
   return deleted[0];
 };
